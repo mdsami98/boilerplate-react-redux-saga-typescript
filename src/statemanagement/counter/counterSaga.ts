@@ -1,3 +1,4 @@
+/* eslint-disable require-yield */
 import {all, call, put, takeLatest} from 'redux-saga/effects';
 import * as type from "./counterTypes"
 
