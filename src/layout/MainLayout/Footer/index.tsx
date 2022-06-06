@@ -1,7 +1,7 @@
 import { Footer } from "flowbite-react";
 import React from "react";
 
-const CustomFooter = () => {
+const MainFooter = () => {
   return (
     <Footer className="flex flex-col">
       <Footer.Copyright href="#" by="Sami" year={2022} />
@@ -9,4 +9,4 @@ const CustomFooter = () => {
   );
 };
 
-export default CustomFooter;
+export default MainFooter;

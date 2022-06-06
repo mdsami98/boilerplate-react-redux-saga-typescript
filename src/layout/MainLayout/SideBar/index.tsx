@@ -5,7 +5,7 @@ const SideBar = () => {
   return (
     <Sidebar
       aria-label="Sidebar with multi-level dropdown example"
-      className="shadow-sm"
+      className="shadow-sm mt-1"
     >
       <Sidebar.Items>
         <Sidebar.ItemGroup>

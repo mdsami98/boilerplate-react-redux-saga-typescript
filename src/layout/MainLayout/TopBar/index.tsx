@@ -1,10 +1,11 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import React from "react";
-
+import { Link } from "react-router-dom";
+import {} from 'react-router-dom';
 export default function TopBar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <Navbar fluid={true} rounded={true} className="shadow-sm">
+    <Navbar fluid={true} rounded={true} className="shadow-sm z-20">
       <Navbar.Brand href="https://flowbite.com/">
         <img
           src="https://flowbite.com/docs/images/logo.svg"
@@ -42,13 +43,13 @@ export default function TopBar() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link href="/navbars" active={true}>
-          Home
-        </Navbar.Link>
-        <Navbar.Link href="/counter">Counter</Navbar.Link>
-        <Navbar.Link href="/navbars">Services</Navbar.Link>
-        <Navbar.Link href="/navbars">Pricing</Navbar.Link>
-        <Navbar.Link href="/navbars">Contact</Navbar.Link>
+        <Link id="dashboard" to="/dashboard" >
+          Dashboard
+        </Link>
+        <Link to="/counter" >
+          Counter
+        </Link>
+        
       </Navbar.Collapse>
     </Navbar>
   );

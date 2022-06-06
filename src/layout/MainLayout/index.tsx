@@ -1,9 +1,9 @@
 import React, { Children } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
-import CustomFooter from "../components/footer";
-import SideBar from "../components/side-bar";
-import TopBar from "../components/top-bar";
-const PageWrapper = ({ children, pageTitle }: any) => {
+import MainFooter from "./Footer";
+import SideBar from "./SideBar";
+import TopBar from "./TopBar";
+const MainLayout = ({ children, pageTitle }: any) => {
   return (
     <HelmetProvider>
       <Helmet>
@@ -19,9 +19,9 @@ const PageWrapper = ({ children, pageTitle }: any) => {
         <div className="col-span-10 mt-5">{children}</div>
       </div>
 
-      <CustomFooter/>
+      <MainFooter/>
     </HelmetProvider>
   );
 };
 
-export default PageWrapper;
+export default MainLayout;
